@@ -18,15 +18,15 @@ using System.Runtime.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
 
-[assembly: EdmRelationshipAttribute("Model", "FK_Categories_Libraries", "Libraries", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.Library), "Categories", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.Category), true)]
-[assembly: EdmRelationshipAttribute("Model", "FK_FlashcardCategories_Categories", "Categories", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.Category), "FlashcardCategories", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.FlashcardCategory), true)]
-[assembly: EdmRelationshipAttribute("Model", "FK_FlashcardCategories_Flashcards", "Flashcards", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.Flashcard), "FlashcardCategories", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.FlashcardCategory), true)]
-[assembly: EdmRelationshipAttribute("Model", "FK_UsersFlashcards_Flashcards", "Flashcards", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.Flashcard), "UsersFlashcards", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.UsersFlashcard), true)]
-[assembly: EdmRelationshipAttribute("Model", "FK_UsersFlashcards_Users", "Users", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.User), "UsersFlashcards", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.UsersFlashcard), true)]
+[assembly: EdmRelationshipAttribute("Model", "FK_Categories_Libraries", "Libraries", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.Entities.Library), "Categories", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.Entities.Category), true)]
+[assembly: EdmRelationshipAttribute("Model", "FK_FlashcardCategories_Categories", "Categories", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.Entities.Category), "FlashcardCategories", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.Entities.FlashcardCategory), true)]
+[assembly: EdmRelationshipAttribute("Model", "FK_FlashcardCategories_Flashcards", "Flashcards", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.Entities.Flashcard), "FlashcardCategories", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.Entities.FlashcardCategory), true)]
+[assembly: EdmRelationshipAttribute("Model", "FK_UsersFlashcards_Flashcards", "Flashcards", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.Entities.Flashcard), "UsersFlashcards", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.Entities.UsersFlashcard), true)]
+[assembly: EdmRelationshipAttribute("Model", "FK_UsersFlashcards_Users", "Users", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Model.Entities.User), "UsersFlashcards", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Model.Entities.UsersFlashcard), true)]
 
 #endregion
 
-namespace Model
+namespace Model.Entities
 {
     #region Contexts
     
