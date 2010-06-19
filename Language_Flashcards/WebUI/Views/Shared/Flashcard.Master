@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Flashcard.master.cs" Inherits="WebUI.Views.Shared.Flashcard" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/css; charset=utf-8" />
+<title>Chinese Flashcards Learn Chinese online. Language Flashcards</title>
+<meta name="description" content="Learn chinese. Easy to use chinese flashcards. learn chinese with free online flashcards. Study cards designed to help you speak chinese. Study learn"/>
+<meta name="keywords" content="flashcards, online flashcards, free, free chinese flashcards, free online flashcards, chinese flashcards, learning chinese, learn chinese, study cards, learning aids, language studying, studying chinese, study aids, flash cards"/>
+<link href="../../Content/defualt.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+<!--********************************************************************* TOP BANNER *************************************************************************-->
+	<div id="topbanner">
+		<div id="navcontainer">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="#">Review Cards</a></li>
+				<li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="#">Practice in English</a></li>
+				<li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="#">Practice in Chinese </a></li>
+				<li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="#">Downloads</a></li>
+				<li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="#">Links</a></li>
+				<li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="mailto:chineseflashcard@aol.com">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+<!--*********************************************************************MAIN_CONTENT*************************************************************************-->	
+	
+	<div id="contentscontainer">
+    <form id="form1" runat="server">
+    <div>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+	
+	</div>
+	
+<!--**********************************************************************BOTTOM_BANNER***********************************************************************-->
+	
+	<div id="bottombanner"></div>
+</div>
+</body>
+</html>
