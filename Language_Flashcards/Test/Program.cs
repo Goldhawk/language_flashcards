@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using Model.Entities;
 using System.Data.Entity;
+using Model.Concrete;
+
+
 
 
 namespace Test
@@ -12,12 +15,14 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            FlashcardDbEntities test = new FlashcardDbEntities();
+            EFFlashcardRepository test = new EFFlashcardRepository();
 
-            foreach (Flashcard item in test.Flashcards)
-            {
-                Console.WriteLine(item.Question);
-            }
+            //foreach (Flashcard item in test.GetById(1))
+            //{
+            //    Console.WriteLine(item.Question);
+            //}
+
+            Console.WriteLine(test.GetById(1).Question);
         }
     }
 }
